@@ -35,8 +35,10 @@ public class UserController {
 		if(checkuserPassword(user,dbUser,mav)){
 			req.getSession().setAttribute("sessionId", getSessionId(user));
 			mav.setViewName("index");
+		}else{
+			mav.setViewName("user/login");
 		}
-		
+
 		return mav;
 		
 	}

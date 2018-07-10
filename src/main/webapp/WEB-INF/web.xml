@@ -22,6 +22,8 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<!-- 通配符用/ 会拦截所有的url,包括jsp不交给tomcat的jsp servlet处理,这样就不会返回jsp页面的源码
+		springmvc.xml中使用<mvc:default-servlet-handler/> 让tomcat的default servlet处理静态资源-->
 	<servlet-mapping>
 		<servlet-name>springDispatcher</servlet-name>
 		<url-pattern>/</url-pattern>

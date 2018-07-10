@@ -31,7 +31,4 @@
 		<property name="suffix" value=".jsp"/>
 	</bean>
 
-	<mvc:resources mapping="/app/images/**" location="/app/images/" />
-    <mvc:resources mapping="/app/js/**" location="/app/js/" />
-    <mvc:resources mapping="/app/css/**" location="/app/css/" />
 </beans>
